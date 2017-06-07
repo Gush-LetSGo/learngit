@@ -1,97 +1,97 @@
-°²×°Íê³ÉºóÒª½øĞĞÉèÖÃ
+å®‰è£…å®Œæˆåè¦è¿›è¡Œè®¾ç½®
 git config --global user.name "gusheng"
 git config --global user.email "804657288@qq.com"
 
 
 
-Ò»¡¢°æ±¾¿ØÖÆ²Ù×÷
+ä¸€ã€ç‰ˆæœ¬æ§åˆ¶æ“ä½œ
 
 mkdir learngit        
 cd learngit        
-pwd					//ÏÔÊ¾µ±Ç°Ä¿Â¼
+pwd					//æ˜¾ç¤ºå½“å‰ç›®å½•
 
-git init				//ÉèÖÃµ±Ç°Ä¿Â¼Îªgit²Ö¿â
+git init				//è®¾ç½®å½“å‰ç›®å½•ä¸ºgitä»“åº“
 
-cat readme.txt				//²é¿´ÎÄ¼şÄÚÈİ
-git add readme.txt			//Ìí¼ÓÎÄ¼ş
-git commit -m"wrote a readme file"	//Ìá½»ÎÄ¼şµ½git ²¢Ìí¼Ó×¢ÊÍ
+cat readme.txt				//æŸ¥çœ‹æ–‡ä»¶å†…å®¹
+git add readme.txt			//æ·»åŠ æ–‡ä»¶
+git commit -m"wrote a readme file"	//æäº¤æ–‡ä»¶åˆ°git å¹¶æ·»åŠ æ³¨é‡Š
 
-git status				//²é¿´¹¤×÷ÇøµÄ×´Ì¬
-git diff				//²é¿´ĞŞ¸ÄÄÚÈİ
+git status				//æŸ¥çœ‹å·¥ä½œåŒºçš„çŠ¶æ€
+git diff				//æŸ¥çœ‹ä¿®æ”¹å†…å®¹
 
-git reset --hard 3628164		//ÍË»Øµ½Ä³¸ö°æ±¾
-git log					//Ìá½»ÀúÊ·
-git reflog				//ÃüÁîÈÕÖ¾
+git reset --hard 3628164		//é€€å›åˆ°æŸä¸ªç‰ˆæœ¬
+git log					//æäº¤å†å²
+git reflog				//å‘½ä»¤æ—¥å¿—
 
-git checkout --readme.txt		//³·ÏúĞŞ¸Ä(ÈÃÕâ¸öÎÄ¼ş»Øµ½×î½üÒ»´Îgit commit»ògit addÊ±µÄ×´Ì¬)
-git rm text.txt				//È·¶¨É¾³ıÎÄ¼ştext.txt
-
-
-
-¶ş¡¢¶àÈËºÏ×÷²Ù×÷
-
-1.Á´½Ógithub
-
-ssh-keygen -t rsa -C "804657288@qq.com"	//´´½¨sshÃØÔ¿
-
-µÇÂ½GitHub£¬´ò¿ª¡°Account settings¡±£¬¡°SSH Keys¡±Ò³Ãæ£¬È»ºó£¬µã¡°Add SSH Key¡±£¬ÌîÉÏÈÎÒâTitle£¬ÔÚKeyÎÄ±¾¿òÀïÕ³Ìùid_rsa.pubÎÄ¼şµÄÄÚÈİ£¬µã¡°Add Key".
-
-git remote add origin git@github.com:Gush-LetSGo/learngit.git		//Ìí¼ÓÓëgitµÄÔ¶³ÌÁ¬½Ó
-
-git push -u origin master						//½«±¾µØµÄÄÚÈİÍÆËÍµ½githubÉÏ
+git checkout --readme.txt		//æ’¤é”€ä¿®æ”¹(è®©è¿™ä¸ªæ–‡ä»¶å›åˆ°æœ€è¿‘ä¸€æ¬¡git commitæˆ–git addæ—¶çš„çŠ¶æ€)
+git rm text.txt				//ç¡®å®šåˆ é™¤æ–‡ä»¶text.txt
+git add -A Â  Â  Â  Â   //æ·»åŠ åˆ é™¤æ–‡ä»¶æ“ä½œç„¶ååœ¨  git commit -m " delete file"
 
 
+äºŒã€å¤šäººåˆä½œæ“ä½œ
 
-Èı¡¢´´½¨·ÖÖ§
+1.é“¾æ¥github
 
-git branch						//²é¿´·ÖÖ§
+ssh-keygen -t rsa -C "804657288@qq.com"	//åˆ›å»ºsshç§˜é’¥
 
-git branch <name>					//´´½¨·ÖÖ§
+ç™»é™†GitHubï¼Œæ‰“å¼€â€œAccount settingsâ€ï¼Œâ€œSSH Keysâ€é¡µé¢ï¼Œç„¶åï¼Œç‚¹â€œAdd SSH Keyâ€ï¼Œå¡«ä¸Šä»»æ„Titleï¼Œåœ¨Keyæ–‡æœ¬æ¡†é‡Œç²˜è´´id_rsa.pubæ–‡ä»¶çš„å†…å®¹ï¼Œç‚¹â€œAdd Key".
 
-git checkout <name>					//ÇĞ»»·ÖÖ§
+git remote add origin git@github.com:Gush-LetSGo/learngit.git		//æ·»åŠ ä¸gitçš„è¿œç¨‹è¿æ¥
 
-git checkout -b <name>					//ÇĞ»»´´½¨·ÖÖ§
-
-git merge <name>					//ºÏ²¢Ä³·ÖÖ§µ½µ±Ç°·ÖÖ§
-
-git branch -d <name>					//É¾³ı·ÖÖ§
-
-git log --graph						//²é¿´·ÖÖ§ºÏ²¢Í¼
+git push -u origin master						//å°†æœ¬åœ°çš„å†…å®¹æ¨é€åˆ°githubä¸Š
 
 
 
-ËÄ¡¢²é¿´Ô¶³ÌĞÅÏ¢
+ä¸‰ã€åˆ›å»ºåˆ†æ”¯
 
-git remote -v						//²é¿´Ô¶³Ì¿âĞÅÏ¢
+git branch						//æŸ¥çœ‹åˆ†æ”¯
 
-git push origin branch-name				//ÍÆËÍ±¾µØ·ÖÖ§
+git branch <name>					//åˆ›å»ºåˆ†æ”¯
 
-git pull						//×¥È¡Ô¶³ÌĞÂÌá½»
+git checkout <name>					//åˆ‡æ¢åˆ†æ”¯
 
-git checkout -b branch-name origin/branch-name		//ÔÚ±¾µØ´´½¨ºÍÔ¶³ÌÒ»ÑùµÄ·ÖÖ§
+git checkout -b <name>					//åˆ‡æ¢åˆ›å»ºåˆ†æ”¯
 
-git branch --set-upstream branch-name origin/branch-name	//½¨Á¢±¾µØ·ÖÖ§ºÍÔ¶³Ì·ÖÖ§µÄ¹ØÁª
+git merge <name>					//åˆå¹¶æŸåˆ†æ”¯åˆ°å½“å‰åˆ†æ”¯
 
+git branch -d <name>					//åˆ é™¤åˆ†æ”¯
 
-
-Îå¡¢±êÇ©
-
-git tag <name>						//¸øµ±Ç°head´òÒ»¸ö±êÇ©
-
-git tag -a <tagname> -m "blablabla..."			//¸ø±êÇ©¼Ó±¸×¢
-
-git tag -s <tagname> -m "blablabla..."			//ÓÃpgpÇ©Ãû±êÇ©
-
-git tag							//²é¿´ËùÓĞ±êÇ©
+git log --graph						//æŸ¥çœ‹åˆ†æ”¯åˆå¹¶å›¾
 
 
-git push origin <tagname>				//ÍÆËÍÒ»¸ö±¾µØ±êÇ©
 
-git push origin --tag					//ÍÆËÍÈ«²¿ÎªÍÆËÍ¹ıµÄ±êÇ©
+å››ã€æŸ¥çœ‹è¿œç¨‹ä¿¡æ¯
 
-git tag -d <tagname>					//É¾³ı±¾µØ±êÇ©
+git remote -v						//æŸ¥çœ‹è¿œç¨‹åº“ä¿¡æ¯
 
-git push origin:refs/tags/<tagname>			//É¾³ıÔ¶³Ì±êÇ©
+git push origin branch-name				//æ¨é€æœ¬åœ°åˆ†æ”¯
+
+git pull						//æŠ“å–è¿œç¨‹æ–°æäº¤
+
+git checkout -b branch-name origin/branch-name		//åœ¨æœ¬åœ°åˆ›å»ºå’Œè¿œç¨‹ä¸€æ ·çš„åˆ†æ”¯
+
+git branch --set-upstream branch-name origin/branch-name	//å»ºç«‹æœ¬åœ°åˆ†æ”¯å’Œè¿œç¨‹åˆ†æ”¯çš„å…³è”
+
+
+
+äº”ã€æ ‡ç­¾
+
+git tag <name>						//ç»™å½“å‰headæ‰“ä¸€ä¸ªæ ‡ç­¾
+
+git tag -a <tagname> -m "blablabla..."			//ç»™æ ‡ç­¾åŠ å¤‡æ³¨
+
+git tag -s <tagname> -m "blablabla..."			//ç”¨pgpç­¾åæ ‡ç­¾
+
+git tag							//æŸ¥çœ‹æ‰€æœ‰æ ‡ç­¾
+
+
+git push origin <tagname>				//æ¨é€ä¸€ä¸ªæœ¬åœ°æ ‡ç­¾
+
+git push origin --tag					//æ¨é€å…¨éƒ¨ä¸ºæ¨é€è¿‡çš„æ ‡ç­¾
+
+git tag -d <tagname>					//åˆ é™¤æœ¬åœ°æ ‡ç­¾
+
+git push origin:refs/tags/<tagname>			//åˆ é™¤è¿œç¨‹æ ‡ç­¾
 
 
 
