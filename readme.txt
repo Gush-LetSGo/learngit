@@ -1,6 +1,1 @@
-git is a distributed version control system.
-git is free software distributed under the GPL.
-git has a mutable index called stage.
-git tracks changes of files.
-
-how to delete file
+这个git的库是用来学习git和练习git的。
