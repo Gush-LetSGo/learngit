@@ -1,0 +1,120 @@
+安装完成后要进行设置
+git config --global user.name "gusheng"
+git config --global user.email "804657288@qq.com"
+
+
+
+一、版本控制操作
+
+mkdir learngit        
+cd learngit        
+pwd					//显示当前目录
+
+git init				//设置当前目录为git仓库
+
+cat readme.txt				//查看文件内容
+git add readme.txt			//添加文件
+git commit -m"wrote a readme file"	//提交文件到git 并添加注释
+
+git status				//查看工作区的状态
+git diff				//查看修改内容
+
+git reset --hard 3628164		//退回到某个版本
+git log					//提交历史
+git reflog				//命令日志
+
+git checkout --readme.txt		//撤销修改(让这个文件回到最近一次git commit或git add时的状态)
+git rm text.txt				//确定删除文件text.txt
+
+
+
+二、多人合作操作
+
+1.链接github
+
+ssh-keygen -t rsa -C "804657288@qq.com"	//创建ssh秘钥
+
+登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容，点“Add Key".
+
+git remote add origin git@github.com:Gush-LetSGo/learngit.git		//添加与git的远程连接
+
+git push -u origin master						//将本地的内容推送到github上
+
+
+
+三、创建分支
+
+git branch						//查看分支
+
+git branch <name>					//创建分支
+
+git checkout <name>					//切换分支
+
+git checkout -b <name>					//切换创建分支
+
+git merge <name>					//合并某分支到当前分支
+
+git branch -d <name>					//删除分支
+
+git log --graph						//查看分支合并图
+
+
+
+四、查看远程信息
+
+git remote -v						//查看远程库信息
+
+git push origin branch-name				//推送本地分支
+
+git pull						//抓取远程新提交
+
+git checkout -b branch-name origin/branch-name		//在本地创建和远程一样的分支
+
+git branch --set-upstream branch-name origin/branch-name	//建立本地分支和远程分支的关联
+
+
+
+五、标签
+
+git tag <name>						//给当前head打一个标签
+
+git tag -a <tagname> -m "blablabla..."			//给标签加备注
+
+git tag -s <tagname> -m "blablabla..."			//用pgp签名标签
+
+git tag							//查看所有标签
+
+
+git push origin <tagname>				//推送一个本地标签
+
+git push origin --tag					//推送全部为推送过的标签
+
+git tag -d <tagname>					//删除本地标签
+
+git push origin:refs/tags/<tagname>			//删除远程标签
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
